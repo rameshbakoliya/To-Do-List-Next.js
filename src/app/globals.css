@@ -1,27 +1,50 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.main-div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: aqua; 
+  align-items: center;
 }
+.center-div{
+  width: 55vh;
+  height: 25vh;
+  background-color: green;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 }
+.newBtn{
+  height: 60px;
+  width: 40px;
+  color: aqua;
+  background-color: black;
+  border-radius: 100px;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+.newBtn :hover{
+  height: 60px;
+  width: 60px;
+  color: black;
+  background-color: yellow;
+  border-radius: 100px;
+  
+}
+.todo-style{
+  display: flex;
+  text-align: right;  
+}
+.inputbut{
+  display: flex;  
+}
+.inputdata{
+  background-color: yellowgreen;
+  border: none;
+  box-sizing: none;
+  margin-right: 10%;
 }
