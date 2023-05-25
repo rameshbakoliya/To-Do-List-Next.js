@@ -33,14 +33,14 @@ import Data from '../../components/mapprpop';
           </Button>
         </span>
         </div>
-      </div>
-      <ol>
+        <ol>
         {newAdd.map((val: string, index: number) => {
           return(
           //@ts-ignore
           <Data text={val} key={index} />)
           })}
       </ol>
+      </div>    
     </div>
   );
 };
