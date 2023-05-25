@@ -9,9 +9,8 @@ const Data = (props: { text: string }) => {
   };
 
   if (isDeleted) {
-    return null; // If the clock is deleted, render nothing
+    return null;
   }
-
   return (
     <>    
       <span onClick={deleteEvent} style={{display:"flex"}}>
